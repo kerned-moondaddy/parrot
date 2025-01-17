@@ -2,8 +2,5 @@
 - name: "RED"
   hosts: localhost
   connection: local
-  tasks:
-    - name: "test"
-      debug:
-        msg: "this is a test"
-
+  roles:
+    role: install-utilities
