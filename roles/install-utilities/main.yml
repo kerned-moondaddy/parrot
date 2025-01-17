@@ -1,0 +1,5 @@
+---
+- include: install-apt.yml
+- include: install-pip.yml
+- include: install-gem.yml
+- include: install-repos.yml
