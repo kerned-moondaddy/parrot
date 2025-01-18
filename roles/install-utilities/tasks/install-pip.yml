@@ -7,6 +7,6 @@
     executable: /usr/bin/pipx
   loop:
     - { name: 'impacket', url: 'git+https://github.com/fortra/impacket.git' }
-    - { name: 'certipy', url: 'git+https://github.com/ly4k/Certipy.git' }
+    - { name: 'certipy-ad', url: 'git+https://github.com/ly4k/Certipy.git' }
   become: true
   become_method: sudo
