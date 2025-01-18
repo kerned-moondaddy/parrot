@@ -7,14 +7,14 @@
     - builder
     - erubi
     - evil-winrm
-    = gssapi
-    = gyoku
-    = httpclient
+    - gssapi
+    - gyoku
+    - httpclient
     - little-plugger
     - logger
     - logging
     - nori
-    = rubyntlm
+    - rubyntlm
     - stringio
     - winrm
     - winrm-fs
