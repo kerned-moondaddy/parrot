@@ -17,7 +17,10 @@
 - name: "apt install"
   apt:
     name:
-      - js
+      - flameshot
+      - exiftool
+      - bloodhound
+      - pipx
     state: latest
   become: true
   become_method: sudo
