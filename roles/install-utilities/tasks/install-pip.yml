@@ -2,7 +2,7 @@
 - name: Install Python tools using pipx
   community.general.pipx:
     name: "{{ item.name }}"
-    src: "{{ item.url }}"
+    source: "{{ item.url }}"
     state: latest
   loop:
     - { name: 'impacket', url: 'git+https://github.com/fortra/impacket.git' }
