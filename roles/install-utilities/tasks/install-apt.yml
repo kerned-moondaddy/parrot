@@ -17,9 +17,6 @@
 - name: "apt install"
   apt:
     name:
-      - flameshot
-      - exiftool
-      - bloodhound
       - pipx
     state: latest
   become: true

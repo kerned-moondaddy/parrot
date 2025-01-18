@@ -1,0 +1,22 @@
+---
+- name: "install gem"
+  gem:
+    name: "{{ item.name }}"
+    state: latest
+  loop:
+    - builder
+    - erubi
+    - evil-winrm
+    = gssapi
+    = gyoku
+    = httpclient
+    - little-plugger
+    - logger
+    - logging
+    - nori
+    = rubyntlm
+    - stringio
+    - winrm
+    - winrm-fs
+  become: true
+  become_method: sudo

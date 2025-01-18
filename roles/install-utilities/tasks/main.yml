@@ -1,2 +1,5 @@
 ---
 - include_tasks: install-apt.yml
+- include_tasks: install-gem.yml
+- include_tasks: install-pip.yml
+- include_tasks: install-repos.yml
