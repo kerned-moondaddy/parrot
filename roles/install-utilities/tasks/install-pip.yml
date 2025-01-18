@@ -1,9 +1,11 @@
 ---
-- name: "install python tools"
+- name: Install Python tools using pipx
   community.general.pipx:
     name: "{{ item.name }}"
-    source: "{{ item.url }}"
+    src: "{{ item.url }}"
     state: latest
   loop:
     - { name: 'impacket', url: 'git+https://github.com/fortra/impacket.git' }
-    - { name: 'certipy-ad', url: 'git+https://github.com/ly4k/Certipy.git' }
+    - { name: 'certipy', url: 'git+https://github.com/ly4k/Certipy.git' }
+  become: true
+  become_method: sudo
